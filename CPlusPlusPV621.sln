@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03_Operators", "02_Operator
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04_EnumCycles", "04_EnumCycles\04_EnumCycles.vcxproj", "{9D7087CF-0C7A-4E56-AB83-5100949165EF}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "05_IncludeCycles", "05_IncludeCycles\05_IncludeCycles.vcxproj", "{E23EB3FF-5955-4115-8363-8FB6AF47B84C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{9D7087CF-0C7A-4E56-AB83-5100949165EF}.Release|x64.Build.0 = Release|x64
 		{9D7087CF-0C7A-4E56-AB83-5100949165EF}.Release|x86.ActiveCfg = Release|Win32
 		{9D7087CF-0C7A-4E56-AB83-5100949165EF}.Release|x86.Build.0 = Release|Win32
+		{E23EB3FF-5955-4115-8363-8FB6AF47B84C}.Debug|x64.ActiveCfg = Debug|x64
+		{E23EB3FF-5955-4115-8363-8FB6AF47B84C}.Debug|x64.Build.0 = Debug|x64
+		{E23EB3FF-5955-4115-8363-8FB6AF47B84C}.Debug|x86.ActiveCfg = Debug|Win32
+		{E23EB3FF-5955-4115-8363-8FB6AF47B84C}.Debug|x86.Build.0 = Debug|Win32
+		{E23EB3FF-5955-4115-8363-8FB6AF47B84C}.Release|x64.ActiveCfg = Release|x64
+		{E23EB3FF-5955-4115-8363-8FB6AF47B84C}.Release|x64.Build.0 = Release|x64
+		{E23EB3FF-5955-4115-8363-8FB6AF47B84C}.Release|x86.ActiveCfg = Release|Win32
+		{E23EB3FF-5955-4115-8363-8FB6AF47B84C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -11,14 +11,14 @@ int main()
 
 	//enum(const int) — це набір іменованих цілочисельних констант.
 
-	/*enum countries{ USA = 1 , France = 33, Ukraine = 380, Italy = 39, Australia = 61};
+	enum countries{ USA = 1 , France = 33, Ukraine = 380, Italy = 39, Australia = 61};
 	cout << USA << endl;
 	cout << France << endl;
 	cout << Ukraine << endl;
 
 	enum coins{ penny = 1, nickel = 5, dime = 10, quarter= 25,half = 50, dollar_coin = 100};
 
-	enum categories {Milk=100, Chemistry,Bread=0,Meat, Bakalia};
+	enum categories {Milk, Chemistry,Bread,Meat, Bakalia};
 	cout << Milk << endl;
 	cout << Chemistry << endl;
 	cout << Bread << endl;
@@ -54,7 +54,7 @@ int main()
 	case half:cout << "half = " << half << endl;break;
 	case dollar_coin:cout << "dollar_coin = " << dollar_coin << endl;break;
 	default:cout << "error name this coin" << endl;	break;
-	}*/
+	}
 
 	//while (true)//Цикл з передумовою
 	//{
