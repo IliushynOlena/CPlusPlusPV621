@@ -121,7 +121,6 @@ int main()
             cout << "|###|";
         }
         cout << endl;
-
     }
 
     // F10 - start debugger from first line
