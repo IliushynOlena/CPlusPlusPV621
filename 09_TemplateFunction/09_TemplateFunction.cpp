@@ -170,97 +170,150 @@
 //
 
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
-//template<typename tarray>
-//tarray maxelement(tarray arr[], tarray size)
-//{
-//    int max = arr[0];
-//    for (int i = 0; i < size; i++)
-//    {
-//        if (arr[i] > max) max = arr[i];
-//    }
-//    return max;
-//}
-
-template <typename ifd>
-ifd maxelement(ifd a, ifd b)
+void initShowMatrix(int arr[][10], int rows, int cols)
 {
-    if (a > b)
-        cout << a << " > " << b;
-    else
-        cout << b << " > " << a;
-    return a, b;
-}
-
-template <typename serarif>
-serarif seredneArif(serarif arrr[], int size)
-{
-    int result = 0;
-    for (int i = 0; i < size; i++)
-    {
-        result += arrr[i];
-    }
-    result = result / size;
-    cout << result;
-
-    return result;
-}
-
-template <typename T_coll>
-void minMaxDvoVimir(T_coll arr[][10], int rows, int columns)
-{
-    T_coll max = arr[0][0];
     for (int i = 0; i < rows; i++)
     {
-        for (int j = 0; j < columns; j++)
+        for (int j = 0; j < cols; j++)
         {
-            arr[i][j] = rand() % 99;
-
-            cout << arr[i][j] << " ";
-            if (arr[i][j] > max)max = arr[i][j];
+            arr[i][j] = rand() % 100;
+            cout << setw(3.5) << arr[i][j] << " ";
         }
         cout << endl;
     }
-        cout << "Max "<< max << endl;
+    cout << endl;
+}
+void initShowMatrix(double arr[][10], int rows, int cols)
+{
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < cols; j++)
+        {
+            arr[i][j] = rand() % 100;
+            cout << setw(3.5) << arr[i][j] << " ";
+        }
+        cout << endl;
+    }
+    cout << endl;
+}
+void initShowMatrix(char arr[][10], int rows, int cols)
+{
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < cols; j++)
+        {
+            arr[i][j] = rand() % 100;
+            cout << setw(3.5) << arr[i][j] << " ";
+        }
+        cout << endl;
+    }
+    cout << endl;
+}
+
+int maxMatrix(int arr[][10], int rows, int cols)
+{
+    int max = arr[0][0];
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < cols; j++)
+        {
+            if (i == j and arr[i][j] > max) {
+                max = arr[i][j];
+            }
+        }
+    }
+    return max;
+}
+double maxMatrix(double arr[][10], int rows, int cols)
+{
+    double max = arr[0][0];
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < cols; j++)
+        {
+            if (i == j and arr[i][j] > max) {
+                max = arr[i][j];
+            }
+        }
+    }
+    return max;
+}
+char maxMatrix(char arr[][10], int rows, int cols)
+{
+    char max = arr[0][0];
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < cols; j++)
+        {
+            if (i == j and arr[i][j] > max) {
+                max = arr[i][j];
+            }
+        }
+    }
+    return max;
+}
+
+int minMatrix(int arr[][10], int rows, int cols)
+{
+    int min = arr[0][0];
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < cols; j++)
+        {
+            if (i == j and arr[i][j] < min) {
+                min = arr[i][j];
+            }
+        }
+    }
+    return min;
+}
+double minMatrix(double arr[][10], int rows, int cols)
+{
+    double min = arr[0][0];
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < cols; j++)
+        {
+            if (i == j and arr[i][j] < min) {
+                min = arr[i][j];
+            }
+        }
+    }
+    return min;
+}
+char minMatrix(char arr[][10], int rows, int cols)
+{
+    char min = arr[0][0];
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < cols; j++)
+        {
+            if (i == j and arr[i][j] < min) {
+                min = arr[i][j];
+            }
+        }
+    }
+    return min;
 }
 
 int main()
 {
     srand(time(0));
-    /*const int size = 10;
-    int arr[size] = { 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 };
-    cout << "max element in array - " << maxelement(arr, size);*/
 
-
-    const int size = 10;
-    const int row = 5;
+    //4
+    const int row = 10;
     const int col = 10;
-    int arr1[size] = { 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 };
-    float arr2[row][col] = { 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 };
-
-    // first exercise
-    cout << "first exercise\n";
-    maxelement(1, 3);
-    cout << "\n";
-    maxelement(7.4, 2.2);
-    cout << "\n";
-    maxelement(1.564345463346, 1.3423543657644234324);
-    cout << "\n\n";
-
-    // second exercise
-    cout << "second exercise\n";
-    seredneArif(arr1, size);
-    cout << "\n\n";
-
-    // third exercise
-    cout << "third exercise\n";
-    minMaxDvoVimir(arr2, row, col);
-
-
-
-
-
-
+    int arr[row][col];
+    double arr1[row][col];
+    char arr2[row][col];
+    initShowMatrix(arr, row, col);
+    cout << "Max in matrix main diagonal (int): " << maxMatrix(arr, row, col) << endl; cout << endl;
+    initShowMatrix(arr1, row, col);
+    cout << "Max in matrix main diagonal (double): " << maxMatrix(arr1, row, col) << endl; cout << endl;
+    initShowMatrix(arr2, row, col);
+    cout << "Max in matrix main diagonal (char): " << maxMatrix(arr2, row, col) << endl; cout << endl;
 
 }
