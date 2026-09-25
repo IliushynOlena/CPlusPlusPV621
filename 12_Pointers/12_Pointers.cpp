@@ -84,7 +84,7 @@ int main()
 	Change(&a);
 	cout << "a = " << a << endl;
 
-	/*
+	
 	int a = 5;
 	int b = 10;
 
