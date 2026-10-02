@@ -90,7 +90,7 @@ int main()
 	cout << arr << endl;
 
 	char someText[] = "White123";
-	someText[2] == 'A'
+	someText[2] == 'A';
 
 	// letter or number
 	cout << someText[0] << " -----> " << isalnum(someText[0]) << endl;
