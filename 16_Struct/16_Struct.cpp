@@ -51,8 +51,25 @@ Worker Input(Worker worker)
 	cout << "Hiredate year "; cin >> worker.hiredate.year;
 	return worker;
 }
+struct Car
+{
+	char mark[15];
+	float volume;
+
+};
+
+//}
 int main()
 {
+	Car cars[10] = {
+		{"BMV", 3.0},
+		{"BMV", 3.0},
+		{"BMV", 3.0},
+		{"BMV", 3.0},
+		{"BMV", 3.0},
+		{"BMV", 3.0},
+		{"BMV", 3.0},
+	}
 	//float int char long short long long double bool
 
 	Date birthdate = { 10, 5, 2000, "May" };
