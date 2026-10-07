@@ -1,0 +1,32 @@
+Hello worl
+Hello world
+Hello world
+Hello world
+Hello world
+Hello world
+Hello world
+Hello world
+Hello world
+Hello world
+ ifstream in("text.txt", ios_base::in);
+ char buff[250];
+
+ while (!in.eof())
+ {
+     in.getline(buff, 250); //in >> buff;
+     cout << buff << endl;
+ }
+
+
+ in.close();
+Hello world
+Hello world
+Hello world
+Hello world
+Hello world
+Hello world
+Hello world
+Hello world
+Hello world
+Hello world
+Hello world
